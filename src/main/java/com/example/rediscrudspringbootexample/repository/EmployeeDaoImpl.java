@@ -24,6 +24,7 @@ public class EmployeeDaoImpl implements IEmployeeDao{
 
     @Override
     public Employee getOneEmployee(Integer id) {
+        System.out.println("called getOneEmployee from db");
         return hashOperations.get(hashReference, id);
     }
 
